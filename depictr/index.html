@@ -1,0 +1,34 @@
+﻿<html>
+<head>
+    <title>Depictr</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="loading hidden">Loading...</div>
+    <div class="warning hidden">
+        <div class="warning-message">
+            Incorrect info
+        </div>
+        <div class="button" onclick="Depictr.Main.closeWarnings()">Close</div>
+    </div>
+    <div class="header"><h1>dePictr</h1></div>
+    <div class="main-container">
+        <div class="header-push"></div>
+        <div width="220" class="left">
+            <canvas id="my-canvas"></canvas>
+
+        </div>
+        <div width="250" class="left">
+            <div class="script-container">
+                <div id="my-script" spellcheck="false" contenteditable="true">a = 255;</div>
+            </div>
+            <div class="button" onclick="Depictr.Main.update()">Update</div>
+        </div>
+
+        <div class="footer-push"></div>
+    </div>
+    <div class="footer"></div>
+
+    <script src="@script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+﻿html,body{
+	margin: 0;
+	padding: 0;
+}
+
+canvas{
+	border: 1px grey dashed;
+	margin: 10px;
+}
+
+.main-container{
+	min-height:100%;
+}
+
+.left{
+    float:left;
+}
+
+textarea{
+	min-width: 100%;
+    max-width: 100%;
+	min-height: 500px;
+    margin: 10px;
+}
+
+.header, .footer, .header-push, .footer-push{
+	clear: both;
+	height: 50px;
+	width: 100%;
+}
+
+.header, .footer{
+	background: black;
+	color: gray;
+}
+
+.header{
+	position: fixed;
+}
+
+.header h1{
+	padding: 0;
+	line-height: 50px;
+	font-size: 50px;
+	float:left;
+	margin:0;
+	cursor: pointer;
+}
+
+.footer{
+	margin-top: -50px;
+}
+
+.button{
+    margin: 10px;
+
+	background: black;
+	color: gray;
+	padding: 10px;
+	display: inline-block;
+	cursor: pointer;
+	
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.button.negative{
+	background: rgb(97, 17, 17);
+}
+
+.button:hover, .e-mail-list-item:hover{
+	background: rgb(60,60,60);
+}
+
+.button.negative:hover{
+	background: rgb(120,17,17);
+}
+
+.script-container{
+    height: 500px;
+}
+
+#my-script{
+    margin: 10px;
+    width: 480px;
+    min-height: 480px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0;
+}
+
+#my-script:focus{
+    outline: none;
+    background: #ebecf5;
+}
+
+.hidden{
+    display:none;
+}
+
+.loading, .warning{
+    padding: 10px;
+    position:fixed;
+    left:0;
+    right:0;
+    top:30px;
+    margin: auto;
+    background:#fff19c;
+    width: 100px;
+    text-align:center;
+    vertical-align:middle;
+    z-index: 500;
+    box-shadow: 0 0 5px 0 black;
+}
+
+.warning{
+    width: 300px;
+    background:#fbdddd;
+}
