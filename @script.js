@@ -20,14 +20,14 @@ function weight(value, newValue, percentage) {
 }
 var Depictr;
 (function (Depictr) {
-    var img = document.createElement("img");
+    Depictr.img = document.createElement("img");
     var clearCanvas = function () {
         Depictr.ctx.clearRect(0, 0, Depictr.canvas.width, Depictr.canvas.height);
     };
     // Image for loading	
-    img.addEventListener("load", function () {
+    Depictr.img.addEventListener("load", function () {
         clearCanvas();
-        Depictr.ctx.drawImage(img, 0, 0);
+        Depictr.ctx.drawImage(Depictr.img, 0, 0);
     }, false);
     // To enable drag and drop
     Depictr.canvas.addEventListener("dragover", function (evt) {
@@ -43,7 +43,7 @@ var Depictr;
                 var reader = new FileReader();
                 // Note: addEventListener doesn't work in Google Chrome for this event
                 reader.onload = function (evt) {
-                    img.src = evt.target["result"];
+                    Depictr.img.src = evt.target["result"];
                 };
                 reader.readAsDataURL(file);
             }
